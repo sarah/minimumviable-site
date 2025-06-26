@@ -2,29 +2,72 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Minimum Viable Cat</title>
   <style>
-body {
-    background-color: white;
-    font-family: Helvetica, Arial, sans-serif;
-    text-align: center;
-    padding: 40px;
-}
+    body {
+      background-color: white;
+      font-family: Helvetica, Arial, sans-serif;
+      text-align: center;
+      padding: 40px;
+    }
     h1 {
-        font-size: 2em;
-        font-weight: bold;
-        margin-bottom: 20px;
+      font-size: 2em;
+      font-weight: bold;
+      margin-bottom: 20px;
     }
     img {
-        max-width: 100%;
-        height: auto;
+      max-width: 100%;
+      height: auto;
+    }
+    nav {
+      position: absolute;
+      top: 20px;
+      right: 40px;
+      font-family: 'Menlo', 'Courier New', Courier, monospace;
+      font-size: 0.9em;
+    }
+    nav a {
+      display: inline;
+      margin-right: 10px;
+      text-decoration: none;
+      color: black;
+    }
+    .button {
+      display: inline-block;
+      background-color: yellow;
+      color: red;
+      font-weight: bold;
+      padding: 14px 24px;
+      font-size: 1.1em;
+      text-decoration: none;
+      border-radius: 5px;
+      border: 2px solid red;
+      margin-top: 30px;
+    }
+    .caption {
+      font-family: 'Menlo', 'Courier New', Courier, monospace;
+      font-size: 0.95em;
+      margin-top: 15px;
+      color: black;
+      font-weight: bold;
     }
   </style>
 </head>
 <body>
-    <h1>MINIMUM VIABLE CAT</h1>
-    <img src="assets/mvc-diagram.png" alt="Figure 1: CAT Box" style="width:50%; height:auto;" />
+  <nav>
+    <a href="manual.html">manual</a>
+    <a href="">notes</a>
+  </nav>
 
+  <h1>MINIMUM VIABLE CAT</h1>
+
+  <img src="assets/mvc-diagram-blinking.png" alt="Figure 1: CAT Box" style="width:50%; height:auto;" />
+  <div class="caption">POST-GRIEF. POST-DEATH.</div>
+
+  <div>
+      <a href="#" class="button" onclick="alert('discontinued. manual only.'); return false;">ORDER NOW</a>
+  </div>
 </body>
 </html>
+
