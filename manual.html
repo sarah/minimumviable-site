@@ -1,129 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Manual | Minimum Viable Cat</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Manual — Minimum Viable Cat</title>
   <style>
     body {
-      background-color: #ffffff;
-      font-family: 'Helvetica Neue', sans-serif;
-      color: #111;
+      font-family: Helvetica, Arial, sans-serif;
       margin: 0;
-      padding: 0  40px 20px 40px;
-      // padding: 40px;
-      line-height: 1.6;
+      padding: 0;
+      background: #fff;
+      color: #111;
     }
+.home-link {
+    position: fixed;
+    top: 20px;
+    left: 40px;
+    font-size: 0.85rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: #000;
+}
 
-    nav {
-      position: fixed;
+nav {
+      position: absolute;
       top: 20px;
       right: 40px;
-      font-size: 0.95rem;
+      font-family: 'Menlo', 'Courier New', Courier, monospace;
+      font-size: 0.9em;
     }
-
     nav a {
-      margin-left: 20px;
+      display: inline;
+      margin-right: 10px;
       text-decoration: none;
-      color: #333;
-    }
-
-    .home-link {
-      position: fixed;
-      top: 20px;
-      left: 40px;
-      font-size: 0.85rem;
-      font-weight: bold;
-      text-decoration: none;
-      color: #000;
+      color: black;
     }
 
     .manual-container {
       max-width: 800px;
-      margin: 100px auto 0 auto;
+      margin: 6rem auto 0 auto;
+      padding: 2rem;
       text-align: center;
     }
 
-    .manual-title {
-      font-family: 'Helvetica Neue', sans-serif;
-      font-weight: 800;
-      text-transform: uppercase;
-      letter-spacing: -0.5px;
-      font-size: 2.2rem;
+    .manual-spread {
+      background: #f8f8f8;
+      padding: 2rem;
       margin-bottom: 2rem;
     }
 
-    .manual-image {
-      max-width: 300px;
-      margin-bottom: 1.5rem;
-    }
-    .manual-footnote {
-  font-size: 0.85rem;
-  color: #555;
-  text-align: center;
-  margin-top: 20px;
-  line-height: 1.4;
-}
-
-    .spread-preview {
-      margin: 3rem 0;
-      padding: 1rem;
-      border: 1px solid #eee;
-      background-color: #f8f8f8;
+    .manual-spread img {
+      width: 80%;
+      height: auto;
+      margin-bottom: 1rem;
     }
 
-    .spread-image {
-      max-width: 100%;
-      margin: 1rem 0;
-    }
-
-    .spread-quote {
-      font-size: 1.2rem;
-      font-weight: 600;
+    .caption {
+      font-weight: bold;
+      font-size: 1.1rem;
       margin-bottom: 0.5rem;
     }
 
-    .spread-sub {
-      font-size: 0.9rem;
+    .specs {
       color: #666;
+      font-size: 1rem;
+      margin-bottom: 2rem;
+    }
+     .spread-contact {
+    font-family: monospace;
+    font-size: 0.9rem;
+    color: #222;
+    text-align: center;
+    margin: 2rem auto;
+    max-width: 500px;
+    line-height: 1.6;
+  }
+
+  .spread-contact a {
+    color: #222;
+    text-decoration: none;
+    border-bottom: 1px solid #ccc;
+    transition: border-bottom 0.2s ease;
+  }
+
+  .spread-contact a:hover {
+    border-bottom: 1px solid #000;
+  }
+
+    .footer {
+      text-align: center;
+      font-size: .75rem;
+      color: #444;
+      margin: 3rem 0;
     }
 
-    .download {
-      margin-top: 2.5rem;
-      font-size: 0.95rem;
-    }
-
-    .download a {
-      color: #222;
+    .footer a {
+      color: blue;
       text-decoration: underline;
     }
 
-    footer {
-      margin-top: 4rem;
-      font-size: 0.8rem;
-      color: #999;
+    @media (max-width: 600px) {
+      .nav {
+        font-size: 1.1rem;
+        right: 1rem;
+      }
+
+      .manual-spread img {
+        width: 100%;
+      }
     }
   </style>
 </head>
 <body>
-  <a class="home-link" href="index.html">MINIMUM VIABLE CAT</a>
-  <nav>
-    manual
+    <a class='home-link' href="index.html">MINIMUM VIABLE CAT</a>
+    <nav>
+    <a href="manual.html">manual</a>
     <a href="">notes</a>
   </nav>
 
   <div class="manual-container">
-
-    <div class="spread-preview">
-        <img class="spread-image" src="assets/spread-intimate-gazing.png" alt="Spread: Enjoy Intimate Moments" style="width:80%; height:auto;">>
-      <div class="spread-quote">ENJOY INTIMATE MOMENTS GAZING INTO YOUR CAT’S EYE.</div>
-      <div class="spread-sub">From the printed manual. [Quarter-fold, 9 spreads, 4¼" × 5⅝"]</div>
+    <div class="manual-spread">
+      <img src="assets/spread-intimate-gazing.png" alt="Cat gazing illustration" />
+      <div class="caption">ENJOY INTIMATE MOMENTS GAZING INTO YOUR CAT’S EYE.</div>
+      <div class="specs">From the printed manual. [Quarter-fold, 9 spreads, 4¼″ × 5⅝″]</div>
+    </div>
+  </div>
+  <div class="spread-contact">
+  Inquiries welcome for printed manuals. <a href="mailto:info@minimumviable.cat?subject=Zine%20Inquiry">info@minimumviable.cat</a>
+</div>
+  <div class="manual-container">
+    <div class="manual-spread">
+      <img src="assets/spread-natural-disasters.png" alt="Natural disasters illustration"</> 
+      <div class="caption">YOUR CAT WILL BE SAFE FROM NATURAL DISASTERS.</div>
+      <div class="specs">From the printed manual. [Quarter-fold, 9 spreads, 4¼″ × 5⅝″]</div>
+    </div>
     </div>
 
-
-    <div class="manual-footnote">
-        Inquiries welcome for printed manuals.  <a href="mailto:info@minimumviable.cat">Email us</a>
-      <br>    For tech specs:
-      <a href="/notes.html">View product specification sheet</a>
+    <div class="footer">
+      <p>For tech specs: <a href="specs.pdf" target="_blank">View product specification sheet</a></p>
+    </div>
   </div>
 </body>
 </html>
