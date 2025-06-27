@@ -27,6 +27,31 @@
   border-bottom: 1px solid #ccc;
   padding-bottom: 1rem;
 }
+    .manual-container {
+      max-width: 800px;
+      margin: 6rem auto 0 auto;
+      padding: 2rem;
+      text-align: center;
+    }
+
+    .manual-spread {
+      background: #f8f8f8;
+      padding: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    .manual-spread img {
+      width: 80%;
+      height: auto;
+      margin-bottom: 1rem;
+    }
+
+    .caption {
+      font-weight: bold;
+      font-size: 1.1rem;
+      margin-bottom: 0.5rem;
+    }
+
 
 
 nav {
@@ -60,86 +85,127 @@ nav a {
       margin-bottom: 50px;
     }
 
-    .bottle-copy {
-      text-align: justify;
-      font-size: 1.1em;
-      margin-bottom: 3em;
-    }
-
-    .bottle-copy span {
-      font-weight: bold;
-      text-transform: uppercase;
-      letter-spacing: 0.5px;
-    }
-
-    .minutes {
-      background-color: #f9f9f9;
-      padding: 1em;
-      border-left: 5px solid #ccc;
-      font-family: 'Courier New', Courier, monospace;
-      white-space: normal;
-    }
     span{display:inline;}
+    .notes-container {
+  max-width: 700px;
+  margin: 4rem auto;
+  padding: 1rem;
+  font-family: 'Helvetica Neue', sans-serif;
+  color: #222;
+}
 
-    .to-order {
-      font-weight: bold;
-      color: #6a0dad;
-    }
+.stream-of-text {
+  line-height: 1.7;
+  letter-spacing: 0.01em;
+  word-spacing: 0.05em;
+}
 
-    .italics {
-      font-style: italic;
-      color: #007777;
-    }
+.segment {
+  display: block;
+  margin-bottom: 1.2em;
+  opacity: 0;
+  animation: fadeIn 1s ease forwards;
+}
 
-    .video {
-      background-color: #e8f0fe;
-      padding: 0 3px;
-      //font-family:'League', cursive;
-      text-transform:none !important;
-      font-family: serif;
-      font-style: italic;
-    }
+.segment:nth-of-type(1) { animation-delay: 0.1s; }
+.segment:nth-3f-type(3) { animation-delay: 0.5s; }
+.segment:nth-of-type(5) { animation-delay: 0.9s; }
+.segment:nth-of-type(7) { animation-delay: 1.3s; }
+/* Add more if needed */
 
-    .loud-insight {
-      text-transform: uppercase;
-      font-weight: bold;
-      color: #b30000;
-    }
+.divider {
+  display: block;
+  text-align: center;
+  font-size: 1.5rem;
+  color: #000;
+  margin-bottom: 0.5em;
+  opacity: 0;
+  animation: fadeIn 0.8s ease forwards;
+}
 
-    .impatience {
-      font-family: 'Courier New', monospace;
-      color: #555;
-      background-color: #ffe6e6;
-      padding: 0 3px;
-    }
-    .preach {
-        font-size:1.3em;
-    }
+.tech-spec-link {
+  margin-top: 3rem;
+  text-align: center;
+}
+
+.tech-spec-link a {
+  font-size: 1rem;
+  text-decoration: none;
+  color: #444;
+  border-bottom: 1px dotted #aaa;
+}
+
+.tech-spec-link a:hover {
+  color: black;
+  border-bottom: 1px solid black;
+}
+
+@keyframes fadeIn {
+  to { opacity: 1; }
+}
+.paragraph-break {
+  display: inline-block;
+  margin: 0 0.25em;
+  font-family: serif;
+  font-weight: normal;
+  opacity: 0.6;
+}
+
+
   </style>
 </head>
 <body>
-    <a class="home-link" href="/">MINIMUM VIABLE CAT</a>
+    <a class="home-link" href="index.html"> MINIMUM VIABLE CAT</a>
 <nav>
-  <a href="/manual">manual</a>
-  <a href="/notes">notes</a>
+  <a href="manual.html">manual</a>
+  <a href="">notes</a>
 </nav>
 
 
   <div class='statements'>
       <span>We are particularly fond of cats. <span><p>The problem with the housecat is that they have internal organs which make them get sick and die.</p></span> </div>
           
-  <div class="bottle-copy">
-          <span class='to-order'>Ok ok ok to order. To order. to. Order. Sit down. Sit down greg. Sit down, samantha. Everyone.  Everyone.  We’ve fucking done it. We’ve invested, invented, invented, the ultimate comfort companion device that does not die.</span>
-          <span class='preach'>
-              Let your cats go. Let them go. Go. all of them, go. Open the door, open those doors wide let them walk out. Coyotes, none, it doesn’t matter, they are going. We may never see them again but we’ll never see them die.</span>
+  <div class="notes-container">
+  <div class="stream-of-text">
+    <span class="segment">IN THE BEGINNING we kept biological cats as companions. We loved them, fed them, played with them, cuddled them, slept with them and built them their own condo universes. We pleaded for their affection and comfort. Pleaded and pleaded and pleaded.</span>
+    <span class="divider">❡</span>
+    <span class="segment">This semi-requited desire had us primed when we were introduced to the iPhone in 2007. Everything changed. Suddenly smart phones were always with us. They was tucked in our pockets, glowing in our beds at night, joining us at dinner and on our dates. They brought us presents. Better presents than dead mice and birds. Presents like likes. And loves. And notifications. And news. The iPhone reflected us back to ourselves in tinted, decorated selfies. A BOND DEVELOPED. Going anywhere without your phone became unimaginable.</span>
+    <span class="divider">❡</span>
+    <span class="segment">While our in-person relationships take place in real-time, our smart phone interruptions take place in REALER TIME. MORE present than present. MORE here than here.</span>
+    <span class="divider">❡</span>
+    <span class="segment">And look closer. Our phones served joy and laughter... in the form of CAT PICTURES.</span>
+    <span class="divider">❡</span>
+    <span class="segment">But what can you do with cat pictures, really? All you can do is... look. Are pictures an improvement over the existing housecat? No. How can we possibly improve on the existing house cat?</span>
+    <span class="divider">❡</span>
+    <span class="segment">We’ve done research.</span>
+    <span class="divider">❡</span>
+    <span class="segment">While we love biological cats, we identified significant problems in the lower 40% of the cats’ body. See, bio cats have internal organs that cause them to use litter, eat expensive foods, get sick and die.</span>
+    <span class="divider">❡</span>
+    <span class="segment">Meanwhile, our devices became more sophisticated and moved from our pockets to our cars to our homes.</span>
+    <span class="divider">❡</span>
+    <span class="segment">Are these devices perfect? Think about them. They are fun to use and make our lives easier, but they have problems in the UPPER 40% of the body, the so-called brains. They’re quite clever, but they speak in synthetic voices and they spy on you. They pretend, but they don’t love you back.</span>
+    <span class="divider">❡</span>
+    <span class="segment">We started asking “What are the essential functionalities of a cat?”, “What are the essential functionalities of a smart device?”</span>
+    <span class="divider">❡</span>
+    <span class="segment">We looked for the core intersection between the cats you love and the devices you love and found three critical aspects. You love the physical interaction of stroking your device. Having the device with you at all times is comforting and makes you feel needed. You love the feedback that you get when you’re interacting: it is positive reinforcement.</span>
+    <span class="divider">❡</span>
+    <span class="segment">We also love gadgets and owning beautiful sleek objects.</span>
+    <span class="divider">❡</span>
+    <span class="segment">With this in mind, we stripped down to the basics and came up with: a rectilinear device that blinks a notification light when it needs your love and purrs when you pet it. Indestructible.</span>
+  </div>
 
-          <span class='video'>You pick up a phone, look, she picks up a phone. Smooths her thumb across it. Trains the camera on her departing cat, thumbs the button, it is the last picture, he walks out of frame, she strokes her phone,</span><span class='loud-insight'> she strokes her phone.</span>
+    <div class="manual-container">
+    <div class="manual-spread">
+      <img src="assets/rectilinear-box.png" alt="Rectilinear Box" />
+      <div class="caption">A RECTILINEAR BOX THAT PURRS WHEN YOU PET IT.</div>
+      <div class="specs">From the printed manual. [Quarter-fold, 9 spreads, 4¼″ × 5⅝″]</div>
+    </div>
+  </div>
 
-          <span class='video'>
-              She has the picture, it won’t keep her warm – but it won’t make me cold, either. She finishes. Pours a drink in an echoing kitchen.</span>
 
-          <span class='to-order'>
-              Flash forward. Flash forward. No. PAST the crying PAST the crying miranda, jesus, no no nonononono, we don’t want to see that, next next ok. OK.  look. Stay calm.</span>
+  <div class="tech-spec-link">
+    <a href="manual.html#techspec" target="_blank">→ Tech Specs</a>
+  </div>
 </div>
 </body>
 </html>
